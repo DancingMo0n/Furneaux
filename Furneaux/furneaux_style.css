@@ -1,0 +1,355 @@
+/* font-family: 'DM Serif Display', serif;
+font-family: 'Libre Caslon Text', serif;
+font-family: 'Roboto', sans-serif; */
+
+/* colors
+brown #47353a 
+pink #f0e1df 
+green #bbc4bc*/
+
+body {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 18px;
+    max-width: 100%;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: #47353a;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+}
+
+/* >>>>>>>>>>>>>>>
+      HEADER
+<<<<<<<<<<<<<< */
+
+
+header {
+    padding: 20px 16px;
+    background-color: #f0e1df;
+    overflow: hidden;
+    margin-bottom: 0;
+    
+}
+
+header h1 {
+    font-size: 30px;
+    float: left;
+    margin: 0;
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    letter-spacing: 2px;   
+}
+
+header nav {
+    float: right;
+    margin-top: 15px;  
+}
+
+header nav a {
+    color: #47353a;
+    text-decoration: none;
+    margin-left: 12px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Libre Caslon Text', serif;
+
+}
+
+@media (max-width: 600px) {
+    header h1,
+    header nav {
+    float: none;
+    text-align: center;
+
+  }
+
+    header nav a {
+    margin-left: 0;
+    margin-right: 12px;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* this styles will only be applied above 820px  */
+@media (min-width: 820px) {
+    header {
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 98%;
+        box-shadow: 0 1px 5px 0px rgba(51,51,51,0.2);
+
+    }
+}  
+
+/* >>>>>>>>>>>>>>>
+  HERO SECTION
+<<<<<<<<<<<<<< */
+
+.hero {
+    background-image: url("pale_grey.jpg");
+    background-blend-mode: multiply;
+    background-color: #b0b0ab22; 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left 50%;
+    padding: 120px 80px 180px 80px;
+    margin-top: 0;
+}
+
+.hero div {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 50px;
+    letter-spacing: 2.4px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    border-bottom: 4px solid #f0e1df;
+    color: #cc9b95;
+
+}
+
+.hero p {
+    font-family: 'Roboto', sans-serif; 
+    letter-spacing: 2px;
+    margin-top: 4px;
+     
+ 
+}
+
+@media (max-width: 600px) {
+    .hero {
+        background-position: center 50%;
+        margin: 0;
+        padding: 100px 10px 120px 10px;
+    }
+
+    .hero h2 {
+        font-size: 40px; 
+        color: #cc9b95;
+    }
+
+    .hero p {
+        font-size: 14px;
+        color: #4a4f4a;
+    }
+}
+
+@media (max-width: 370px) { {
+
+}
+    .hero h2{
+        font-size: 34px;
+    }
+
+}
+
+/* >>>>>>>>>>>>>>>
+   FLOWER IMG
+<<<<<<<<<<<<<< */
+
+.flowers {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    height: 55vh;
+    
+}
+
+.flowers img {
+    width: 33.3%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 0;
+
+}
+
+@media (max-width: 550px) {
+    .flowers {
+        flex-direction: column;
+        height: auto; 
+    }
+
+    .flowers img {
+        width: 100%;
+        margin: 0 auto; 
+        object-fit: cover;
+        padding: 0;
+        height: 400px;
+    }
+}
+
+/* >>>>>>>>>>>>>>>
+      QUOTES
+<<<<<<<<<<<<<< */
+
+.quotes div {
+    padding: 30px 20px 40px 20px;
+}
+
+.quotes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 0;
+    font-size: 25px;
+    line-height: 30px
+    
+}
+ .quotes-img {
+    border-radius: 150px;
+ }
+
+.pink-background {
+    background-color: #f0e1df;
+}
+
+.quotes p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-bottom: 2em;
+
+}
+
+@media (max-width: 600px) {
+
+    .quotes div {
+        padding-bottom: 5px;
+        marging-bottom: 0;
+    }
+
+    .quotes {
+
+        display: block;
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+
+    .quotes p {
+        display: none;
+    }
+
+}
+
+
+/* >>>>>>>>>>>>>>>
+    FEATURED
+<<<<<<<<<<<<<< */
+
+.featured {
+    background-color: #bbc4bc;
+    padding: 20px 20px 35px 20px;
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+.featured p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+
+}
+
+.featured-logo {
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+@media (max-width: 800px) {
+
+    .featured-logo {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+
+@media (max-width: 657px){
+    .featured-logo{
+        margin: 0 auto 35px auto;
+        display: block; 
+    }
+
+    .featured-logo:last-child{
+        margin-bottom: 0;
+    }
+
+}
+
+/* >>>>>>>>>>>>>>>
+   FOOTER
+<<<<<<<<<<<<<< */
+
+.footer-image {
+    background-image: url("flower-footer.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center 5%;
+    padding: 0px;
+    margin: 0 auto;
+    height: 40vh;
+
+}  
+
+
+@media (max-width: 370px) {
+
+    .footer-image {
+        padding: 0;
+        margin: 0;
+        height: auto;
+        background-position: top;
+    }
+}
+
+
+footer {
+    padding: 0px 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; 
+}
+
+footer h1 {
+    font-size: 18px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+@media (max-width: 320px){
+
+    footer {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+}
+
+
+
+
+
+
+
